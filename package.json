@@ -4,7 +4,7 @@
 	"type": "module",
 	"dependencies": {
 		"browser-sync": "^3.0.2",
-		"cuirk": "^0.0.20"
+		"cuirk": "^0.0.24"
 	},
 	"scripts": {
 		"build": "npx build",

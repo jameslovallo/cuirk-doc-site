@@ -1,9 +1,7 @@
 import { css, html, loop } from 'cuirk'
 
 export const lighthouse = () => html`
-	<div class="lighthouse">
-		${loop([...Array(4)], () => html`<div>100</div>`)}
-	</div>
+	<div class="lighthouse">${loop(4, html`<div>100</div>`)}</div>
 `
 
 export const lighthouseStyles = css`

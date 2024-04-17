@@ -48,3 +48,20 @@ ol,
 ul {
 	line-height: 1.66;
 }
+
+a {
+	color: dodgerblue;
+}
+
+code:not([class*='language-']) {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+pre:has([class*='language-']) {
+	background: var(--color-bg-code-block);
+	font-size: 13px;
+	margin: 1em 0;
+	padding: 0.75rem;
+}

@@ -1,41 +1,28 @@
-import { md } from 'cuirk'
+import { loop, md } from 'cuirk'
 import { card, grid, lighthouse } from '../src/components/index.js'
-import { meta } from '../src/config.js'
+import { meta, navLinks } from '../src/config.js'
+
+const linkCards = navLinks.filter((link) => link.position === 'end')
 
 export const body = md`
 # ${meta.title}
 
 ${meta.description}
 
+\`\`\`bash
+npm i cuirk
+\`\`\`
+
 ## Features
 
-- Write pages in Javascript with Markdown
-- Dynamic templates
-- Super simple project structure
+- Write pages with Markdown in JS
+- Noob-friendly project structure
 - 1 config file for all global settings
+- Dynamic page templates
 - 100% HTML output, no JS
 	${lighthouse()}
 
 ## Get Started
 
-${grid([
-	card({
-		title: 'Quick Start',
-		description: 'Scaffold your project cuickly!',
-		link: '/starters',
-		linkLabel: 'Starter Gallery',
-	}),
-	card({
-		title: 'Pages',
-		description: 'Write static pages with MD in JS',
-		link: '/docs#pages',
-		linkLabel: 'Page Docs',
-	}),
-	card({
-		title: 'Components',
-		description: 'Reusable content layouts, no JS',
-		link: '/docs#components',
-		linkLabel: 'Component Docs',
-	}),
-])}
+${grid(loop(linkCards, card))}
 `
