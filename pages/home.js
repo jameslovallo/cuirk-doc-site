@@ -10,13 +10,13 @@ export const body = md`
 
 ${meta.description}
 
-\`\`\`bash
+\`\`\`cmd
 npm i cuirk
 \`\`\`
 
 ## Features
 
-- Write pages with Markdown in JS
+- Write pages with MD in JS
 - Noob-friendly project structure
 - 1 config file for all global settings
 - Dynamic page templates

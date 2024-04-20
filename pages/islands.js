@@ -25,7 +25,7 @@ ${meta.description}
 
 ## Creating an Island
 
-Cuick's philosophy is that everything that can be static should be static. However, client-side Javascript is often necessary to create dynamic content, and custom elements are a fantastic way to create \`islands\` of interactive content within your pages. You can use custom elements from anywhere, of course, but we encourage you to try our first-party solution, called [Cuick](/cuick).
+Cuirk's philosophy is that everything that can be static should be static. However, client-side Javascript is often necessary to create dynamic content, and custom elements are a fantastic way to create \`islands\` of interactive content within your pages. You can use custom elements from anywhere, of course, but we encourage you to try our first-party solution, called [Cuick](/cuick).
 
 ### About Cuick
 
@@ -35,7 +35,7 @@ ${embedCode('src/assets/snippets/islands/counter.js')}
 
 ### Self-Documenting Components
 
-Cuick components are _self-documenting_.If you embed a Cuick component in the provided, the following interactive playground is automatically generated. This is an incredible way to document your components, create stories, or configure a component to use in your site or application.
+Cuick components are _self-documenting_. If you nest a Cuick component inside of the provided \`<c-story>\` component, the following interactive playground is automatically generated. This is an incredible way to document your components, create stories, or configure a component to use in your site or application.
 
 <c-story><c-badge></c-badge></c-story>
 

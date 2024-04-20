@@ -17,7 +17,7 @@ Layouts are the HTML template for your pages. They consume data from \`src/confi
 
 ### Default Layout
 
-The default layout is \`default.js\` in the \`layouts\` directory.
+The default layout is \`layouts/default.js\`.
 
 ${embedCode('src/layouts/default.js')}
 
