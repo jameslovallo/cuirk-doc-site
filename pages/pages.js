@@ -16,8 +16,10 @@ ${meta.description}
 
 To add a new page, create a Javascript file in the \`pages\` directory. This page will export two constants:
 
-- \`meta\` is the page metadata
-- \`body\` is the page content
+| name | value |
+| ----- | ----- |
+| meta | object |
+| body | tagged template literal |
 
 ### Metadata
 
