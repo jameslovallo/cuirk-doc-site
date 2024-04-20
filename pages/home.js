@@ -10,7 +10,7 @@ export const body = md`
 
 ${meta.description}
 
-\`\`\`cmd
+\`\`\`shell
 npm i cuirk
 \`\`\`
 
