@@ -90,7 +90,7 @@ pre:has([class*='language-']) {
 	background: var(--color-bg-code-block);
 	font-size: 13px;
 	margin: 1em 0;
-	overflow-x: scroll;
+	overflow-x: auto;
 	padding: 0.75rem;
 }
 
