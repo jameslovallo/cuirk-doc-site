@@ -57,7 +57,7 @@ export const navLinks = [
 	},
 	{
 		title: 'Islands',
-		description: 'Small sections of interactive content',
+		description: 'For client-side Javascript',
 		link: '/islands.html',
 		linkLabel: 'Island Docs',
 		position: 'end',
