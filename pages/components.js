@@ -14,7 +14,7 @@ ${meta.description}
 
 ## Creating a Component
 
-A component is simply a function that returns markup, and can be used in templates, pages, or other components. The \`html\` tag is used to render the markup returned by the component. Several helper functions are provided to make writing components easier, please see the [Helpers](/helpers) page for details.
+A component is simply a function that returns markup, and can be used in templates, pages, or other components. The \`html\` tag is used to render the markup returned by the component. Several [helper functions](/helpers) are provided to make writing components easier.
 
 ### Styles
 

@@ -53,7 +53,7 @@ ${embedCode('src/assets/snippets/helpers/createTags.js')}
 
 ## componentStyles
 
-The \`componentStyles\` function is used to include component styles in your templates. See the [Layouts](/layouts) page for more information.
+The \`componentStyles\` function is used to include component styles in your layouts. See the [Layouts](/layouts) page for an example.
 
 ${embedCode('src/assets/snippets/helpers/componentStyles.js')}
 
