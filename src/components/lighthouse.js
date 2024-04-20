@@ -4,7 +4,7 @@ export const lighthouse = () => html`
 	<div class="lighthouse">${loop(4, html`<div>100</div>`)}</div>
 `
 
-export const lighthouseStyles = css`
+lighthouse.style = css`
 	.lighthouse {
 		--green: rgb(0, 204, 102);
 		display: flex;

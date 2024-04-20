@@ -14,7 +14,7 @@ export const nav = ({ links }) => {
 	`
 }
 
-export const navStyles = css`
+nav.style = css`
 	nav {
 		background: var(--nav-bg, black);
 		color: var(--nav-color, white);

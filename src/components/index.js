@@ -1,16 +1,8 @@
-import { card, cardStyles } from './card.js'
-import { footer, footerStyles } from './footer.js'
-import { grid, gridStyles } from './grid.js'
-import { lighthouse, lighthouseStyles } from './lighthouse.js'
+import { card } from './card.js'
+import { footer } from './footer.js'
+import { grid } from './grid.js'
+import { lighthouse } from './lighthouse.js'
 import { link } from './link.js'
-import { nav, navStyles } from './nav.js'
+import { nav } from './nav.js'
 
-const componentCss = [
-	cardStyles,
-	footerStyles,
-	gridStyles,
-	lighthouseStyles,
-	navStyles,
-].join('\n')
-
-export { card, componentCss, footer, grid, lighthouse, link, nav }
+export { card, footer, grid, lighthouse, link, nav }

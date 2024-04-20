@@ -1,8 +1,8 @@
 import { css, html } from 'cuirk'
 
-export const grid = (children) => html` <div class="grid">${children}</div> `
+export const grid = (children) => html`<div class="grid">${children}</div>`
 
-export const gridStyles = css`
+grid.style = css`
 	.grid {
 		display: grid;
 		gap: 1rem;

@@ -1,5 +1,7 @@
-import { html, tags } from 'cuirk'
-import { componentCss, footer, nav } from '../components/index.js'
+import { componentStyles, createTags, html } from 'cuirk'
+import * as components from '../components/index.js'
+
+const { footer, nav } = components
 
 export default ({
 	meta: { title, description, url, image },
@@ -22,12 +24,12 @@ export default ({
 			<meta property="og:url" content="${url}" />
 			<meta property="og:image" content="${image}" />
 			<!-- links -->
-			${tags(links, 'link')}
+			${createTags(links, 'link')}
 			<!-- scripts -->
-			${tags(scripts, 'script')}
+			${createTags(scripts, 'script')}
 			<!-- styles -->
 			<style>
-				${componentCss}
+				${componentStyles(components)}
 			</style>
 		</head>
 		<body>

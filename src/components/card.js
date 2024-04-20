@@ -9,7 +9,7 @@ export const card = ({ img, title, description, link, linkLabel }) => html`
 	</div>
 `
 
-export const cardStyles = css`
+card.style = css`
 	.card {
 		--card-padding: 0.75rem;
 		border: var(--card-border, 1px solid rgba(155, 155, 155, 0.5));

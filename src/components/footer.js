@@ -5,7 +5,7 @@ export const footer = ({ links }) => html`
 	<footer>${loop(links, link)}</footer>
 `
 
-export const footerStyles = css`
+footer.style = css`
 	footer {
 		background: var(--footer-bg, black);
 		color: var(--footer-color, white);
