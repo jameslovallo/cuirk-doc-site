@@ -23,14 +23,12 @@ export default ({
 			<meta property="og:site_name" content="${title}" />
 			<meta property="og:url" content="${url}" />
 			<meta property="og:image" content="${image}" />
+			<!-- component styles -->
+			${componentStyles(components)}
 			<!-- links -->
 			${createTags(links, 'link')}
 			<!-- scripts -->
 			${createTags(scripts, 'script')}
-			<!-- styles -->
-			<style>
-				${componentStyles(components)}
-			</style>
 		</head>
 		<body>
 			${nav({ links: navLinks })}
