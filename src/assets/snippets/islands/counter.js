@@ -1,7 +1,6 @@
 import { create, html } from '//unpkg.com/cuick'
 
-create({
-	tag: 'counter',
+create('counter', {
 	count: 0,
 	template({ count }) {
 		const add = () => this.count++
