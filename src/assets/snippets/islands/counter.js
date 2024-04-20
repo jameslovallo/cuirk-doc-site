@@ -1,9 +1,9 @@
-import { create, html } from '//unpkg.com/cuick'
+import { create, html } from '//unpkg.com/cuick-dev'
 
 create('counter', {
-	count: 0,
-	template({ count }) {
-		const add = () => this.count++
-		return html`<button @click=${add}>${count}</button>`
-	},
+	$count: 0,
+	template: ({ $count }) => html`
+		<button @click=${() => $count.value++}>
+			Count: ${$count.value}
+		</button>`
 })

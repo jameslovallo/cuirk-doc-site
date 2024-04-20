@@ -14,6 +14,10 @@ export const meta = {
 			type: 'module',
 			src: 'https://unpkg.com/cuick-dev@1.0.17/components/story.js',
 		},
+		{
+			type: 'module',
+			src: '/src/assets/snippets/islands/counter.js',
+		},
 	],
 }
 
@@ -29,7 +33,9 @@ Cuirk's philosophy is that everything that can be static should be static. Howev
 
 ### About Cuick
 
-Cuick has a dirt-simple API that makes it easy to create interactive components that work on any site and with any framework. 
+Cuick has a dirt-simple API that makes it easy to create interactive components that work on any site and with any framework.
+
+<c-counter></c-counter>
 
 ${embedCode('src/assets/snippets/islands/counter.js')}
 
