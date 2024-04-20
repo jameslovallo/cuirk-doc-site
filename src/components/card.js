@@ -12,11 +12,17 @@ export const card = ({ img, title, description, link, linkLabel }) => html`
 card.style = css`
 	.card {
 		--card-padding: 0.75rem;
+		background: var(--card-bg, white);
 		border: var(--card-border, 1px solid rgba(155, 155, 155, 0.5));
 		border-radius: var(--card-br, 0.25rem);
 		display: grid;
 		grid-template-rows: auto 1fr;
 		padding-bottom: var(--card-padding);
+
+		@media (prefers-color-scheme: dark) {
+			--card-bg: black;
+			--card-border: 1px solid rgba(155, 155, 155, 0.2);
+		}
 
 		> * {
 			margin: var(--card-padding) var(--card-padding) 0;

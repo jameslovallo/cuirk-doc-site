@@ -74,6 +74,10 @@ ul {
 
 a {
 	color: dodgerblue;
+
+	@media (prefers-color-scheme: dark) {
+		color: var(--color-blue);
+	}
 }
 
 code:not([class*='language-']) {
