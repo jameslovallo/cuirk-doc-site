@@ -18,8 +18,6 @@ npm i cuirk
 
 - Write pages with MD in JS
 - Noob-friendly project structure
-- 1 config file for all global settings
-- Dynamic page templates
 - 100% HTML output, no JS
 	${lighthouse()}
 
