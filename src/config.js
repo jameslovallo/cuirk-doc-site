@@ -10,13 +10,7 @@ export const meta = {
 		},
 		{
 			rel: 'stylesheet',
-			href: 'https://unpkg.com/@jongwooo/prism-theme-github@1.14.0/themes/prism-github-default-dark.min.css',
-		},
-		{ rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-		{ rel: 'preconnect', href: 'https://fonts.gstatic.com' },
-		{
-			rel: 'stylesheet',
-			href: 'https://fonts.googleapis.com/css2?family=Cairo+Play:wght@700&display=swap',
+			href: '/src/assets/css/prism-github-default-dark.min.css',
 		},
 	],
 }
