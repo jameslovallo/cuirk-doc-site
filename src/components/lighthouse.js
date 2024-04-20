@@ -6,18 +6,18 @@ export const lighthouse = () => html`
 
 lighthouse.style = css`
 	.lighthouse {
-		--green: rgb(0, 204, 102);
+		--green: 0, 204, 102;
 		display: flex;
 		gap: 0.5rem;
 		margin-top: 0.25rem;
 
 		> div {
 			align-items: center;
-			background: rgba(0, 204, 102, 0.1);
+			background: rgba(var(--green), 0.1);
 			border-radius: 50%;
-			border: 3px solid var(--green);
+			border: 3px solid rgb(var(--green));
 			box-sizing: border-box;
-			color: var(--green);
+			color: rgb(var(--green));
 			display: flex;
 			font-family: monospace;
 			font-size: 14px;
