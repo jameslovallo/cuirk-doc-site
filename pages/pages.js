@@ -33,7 +33,7 @@ Markdown is the recommended way to write page content. Optionally, the \`md\` fu
 
 ${embedCode('src/snippets/pages/content.js')}
 
-### Using Data
+### Importing Content
 
 You can import data from any other file in your project, without restriction. In this example from this site's home page:
 
