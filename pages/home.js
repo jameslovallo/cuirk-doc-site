@@ -1,8 +1,9 @@
 import { loop, md } from 'cuirk'
 import { card, grid, lighthouse } from '../src/components/index.js'
-import { meta, navLinks } from '../src/config.js'
+import meta from '../src/data/meta.js'
+import links from '../src/data/nav.js'
 
-const linkCards = navLinks.filter((link) => link.position === 'end')
+const linkCards = links.filter((link) => link.position === 'end')
 
 export const body = md`
 

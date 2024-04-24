@@ -1,21 +1,4 @@
-export const meta = {
-	title: 'Cuirk',
-	description: 'A fast ESM static site generator.',
-	url: 'URL',
-	image: 'Image',
-	links: [
-		{
-			rel: 'stylesheet',
-			href: '/src/style.css',
-		},
-		{
-			rel: 'stylesheet',
-			href: '/src/assets/css/prism-github-default-dark.min.css',
-		},
-	],
-}
-
-export const navLinks = [
+export default [
 	{
 		title: 'Home',
 		link: '/',
@@ -24,42 +7,42 @@ export const navLinks = [
 	{
 		title: 'Quick Start',
 		description: 'Start with a template',
-		link: '/quick-start.html',
+		link: '/quick-start',
 		linkLabel: 'Template Gallery',
 		position: 'end',
 	},
 	{
 		title: 'Layouts',
 		description: 'The layout of your site',
-		link: '/layouts.html',
+		link: '/layouts',
 		linkLabel: 'Layout Docs',
 		position: 'end',
 	},
 	{
 		title: 'Pages',
 		description: 'Write content with MD in JS',
-		link: '/pages.html',
+		link: '/pages',
 		linkLabel: 'Page Docs',
 		position: 'end',
 	},
 	{
 		title: 'Components',
 		description: 'Reusable markup with no JS',
-		link: '/components.html',
+		link: '/components',
 		linkLabel: 'Component Docs',
 		position: 'end',
 	},
 	{
 		title: 'Islands',
 		description: 'For client-side Javascript',
-		link: '/islands.html',
+		link: '/islands',
 		linkLabel: 'Island Docs',
 		position: 'end',
 	},
 	{
 		title: 'Helpers',
 		description: 'Utils to make life easier',
-		link: '/helpers.html',
+		link: '/helpers',
 		linkLabel: 'Helper Docs',
 		position: 'end',
 	},

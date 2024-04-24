@@ -26,7 +26,7 @@ The \`loop\` function makes it easy to render a list of items in a template.
 | items | An array of items or a number |
 | template | A component or markup to render form each item |
 
-${embedCode('src/assets/snippets/components/loop.js')}
+${embedCode('src/snippets/components/loop.js')}
 
 ## when
 
@@ -37,24 +37,24 @@ The \`when\` function can be used to conditionally render a template.
 | condition | A boolean or an expression that evaluates to a boolean |
 | template | A component or markup to render if the condition is true |
 
-${embedCode('src/assets/snippets/components/when.js')}
+${embedCode('src/snippets/components/when.js')}
 
 ## embedCode
 
 The \`embedCode\` function can be used to embed code from other files in your templates. It uses PrismJS for syntax highlighting during the build.
 
-${embedCode('src/assets/snippets/components/embed.js')}
+${embedCode('src/snippets/components/embed.js')}
 
 ## createTags
 
 The \`createTags\` function is used to create HTML tags from imported data.
 
-${embedCode('src/assets/snippets/helpers/createTags.js')}
+${embedCode('src/snippets/helpers/createTags.js')}
 
 ## componentStyles
 
 The \`componentStyles\` function is used to include component styles in your layouts. See the [Layouts](/layouts) page for an example.
 
-${embedCode('src/assets/snippets/helpers/componentStyles.js')}
+${embedCode('src/snippets/helpers/componentStyles.js')}
 
 `

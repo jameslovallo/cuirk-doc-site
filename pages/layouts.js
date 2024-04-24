@@ -13,7 +13,7 @@ ${meta.description}
 
 ## Creating a Layout
 
-Layouts are the HTML template for your pages. They consume data from \`src/config.js\` and from each page's exported metadata. Page metadata overrides global data. The \`componentStyles\` function is used to import styles from components, and the \`createTags\` function is used to create HTML tags from imported data.
+Layouts are the HTML template for your pages. They can import any data, for example from \`src/data/meta.js\`, and each page's exported metadata is injected during the build. Page metadata overrides global metadata. The \`componentStyles\` function is used to import styles from components, and the \`createTags\` function is used to create HTML tags from imported script or link tags defined in metadata, or from any other source.
 
 ### Default Layout
 

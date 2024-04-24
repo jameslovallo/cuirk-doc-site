@@ -16,7 +16,7 @@ export const meta = {
 		},
 		{
 			type: 'module',
-			src: '/src/assets/snippets/islands/counter.js',
+			src: '/src/snippets/islands/counter.js',
 		},
 	],
 }
@@ -37,7 +37,7 @@ Cuick has a dirt-simple API that makes it easy to create interactive components 
 
 <c-counter></c-counter>
 
-${embedCode('src/assets/snippets/islands/counter.js')}
+${embedCode('src/snippets/islands/counter.js')}
 
 ### Self-Documenting Components
 
