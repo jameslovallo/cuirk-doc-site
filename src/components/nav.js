@@ -1,4 +1,4 @@
-import { css, html, loop } from 'cuirk'
+import { html, loop, scss } from 'cuirk'
 import { link } from './link.js'
 
 export const nav = ({ links }) => {
@@ -14,18 +14,17 @@ export const nav = ({ links }) => {
 	`
 }
 
-nav.style = css`
+nav.style = scss`
 	nav {
 		background: var(--nav-bg, black);
 		color: var(--nav-color, white);
 		display: grid;
 		gap: 1rem;
 		grid-template-columns: repeat(3, auto);
-		padding: 1rem;
+		padding: 0 .5rem;
 
 		> div {
 			display: flex;
-			gap: 1rem;
 
 			&:not(:first-child):not(:last-child) {
 				justify-content: center;
@@ -37,7 +36,12 @@ nav.style = css`
 
 			a {
 				color: inherit;
+				padding: 1rem .5rem;
 				text-decoration: none;
+
+				&:hover {
+					background: #111;
+				}
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-import { css, html, when } from 'cuirk'
+import { html, scss, when } from 'cuirk'
 
 export const card = ({ img, title, description, link, linkLabel }) => html`
 	<div class="card">
@@ -9,7 +9,7 @@ export const card = ({ img, title, description, link, linkLabel }) => html`
 	</div>
 `
 
-card.style = css`
+card.style = scss`
 	.card {
 		--card-padding: 0.75rem;
 		background: var(--card-bg, white);

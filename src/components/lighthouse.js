@@ -1,10 +1,10 @@
-import { css, html, loop } from 'cuirk'
+import { html, loop, scss } from 'cuirk'
 
 export const lighthouse = () => html`
 	<div class="lighthouse">${loop(4, html`<div>100</div>`)}</div>
 `
 
-lighthouse.style = css`
+lighthouse.style = scss`
 	.lighthouse {
 		--green: 0, 204, 102;
 		display: flex;

@@ -1,11 +1,11 @@
-import { css, html, loop } from 'cuirk'
+import { html, loop, scss } from 'cuirk'
 import { link } from './link.js'
 
 export const footer = ({ links }) => html`
 	<footer>${loop(links, link)}</footer>
 `
 
-footer.style = css`
+footer.style = scss`
 	footer {
 		background: var(--footer-bg, black);
 		color: var(--footer-color, white);
