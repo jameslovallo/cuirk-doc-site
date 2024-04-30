@@ -13,7 +13,7 @@ card.style = scss`
 	.card {
 		--card-padding: 0.75rem;
 		background: var(--card-bg, white);
-		border: var(--card-border, 1px solid rgba(155, 155, 155, 0.5));
+		border: var(--card-border, 1px solid #5552);
 		border-radius: var(--card-br, 0.25rem);
 		display: grid;
 		grid-template-rows: auto 1fr;
@@ -21,7 +21,7 @@ card.style = scss`
 
 		@media (prefers-color-scheme: dark) {
 			--card-bg: black;
-			--card-border: 1px solid rgba(155, 155, 155, 0.2);
+			--card-border: 1px solid #5552;
 		}
 
 		> * {
