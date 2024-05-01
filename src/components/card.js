@@ -1,36 +1,40 @@
 import { html, scss, when } from 'cuirk'
 
 export const card = ({ img, title, description, link, linkLabel }) => html`
-	<div class="card">
+	<a href="${link}" class="card">
 		${when(img, html`<img src="${img}" />`)}
 		${when(title, html`<h3>${title}</h3>`)}
-		${when(description, html`<p>${description}</p>`)}
-		${when(link && linkLabel, html`<a href="${link}">${linkLabel}</a>`)}
-	</div>
+		${when(description, html`<small>${description}</small>`)}
+		${when(link && linkLabel, html`<small>${linkLabel}</small>`)}
+	</a>
 `
 
 card.style = scss`
-	.card {
-		--card-padding: 0.75rem;
-		background: var(--card-bg, white);
-		border: var(--card-border, 1px solid #5552);
-		border-radius: var(--card-br, 0.25rem);
+		.card {
+		background: var(--c-surface);
+		border: var(--c-border);
+		border-radius: 1rem;
+		color: var(--c-surface-color);
 		display: grid;
-		grid-template-rows: auto 1fr;
-		padding-bottom: var(--card-padding);
+		gap: .5rem;
+		padding: 1rem;
+		text-decoration: none;
 
-		@media (prefers-color-scheme: dark) {
-			--card-bg: black;
-			--card-border: 1px solid #5552;
+		&:hover {
+			background: var(--c-primary-hover);
+			border-color: var(--c-primary-active);
+		}
+		&:active {
+			background: var(--c-primary-active);
 		}
 
-		> * {
-			margin: var(--card-padding) var(--card-padding) 0;
+		* {
+			margin: 0;
 		}
 
-		> a {
-			font-size: 14px;
-			text-decoration: none;
+		small:last-of-type {
+			display: inline-block;
+			margin-top: .5rem;
 		}
 	}
 `

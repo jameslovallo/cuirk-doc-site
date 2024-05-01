@@ -24,6 +24,6 @@ npm i cuirk
 
 ## Get Started
 
-${grid(loop(linkCards, card))}
+${grid({ children: loop(linkCards, card) })}
 
 `

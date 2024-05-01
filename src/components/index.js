@@ -1,6 +1,8 @@
+export { accordion, icon, linkList, modal } from 'cuirk/components/index.js'
 export { card } from './card.js'
 export { footer } from './footer.js'
 export { grid } from './grid.js'
+export { iconTile } from './icon-tile.js'
 export { lighthouse } from './lighthouse.js'
 export { link } from './link.js'
 export { nav } from './nav.js'
