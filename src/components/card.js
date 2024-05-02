@@ -43,7 +43,7 @@ card.style = scss`
 
 		> .text {
 			display: grid;
-			gap: .5rem;
+			gap: .75rem;
 			padding: 1rem;
 		}
 
