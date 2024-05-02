@@ -16,9 +16,9 @@ export default ({ meta, children }) => {
 			</head>
 			<body>
 				<!-- page content -->
-				${nav({ links: links })}
+				${nav(links)}
 				<main>${children}</main>
-				${footer({ links: links })}
+				${footer(links)}
 				<!-- component scripts -->
 				${componentScripts(components)}
 			</body>

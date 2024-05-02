@@ -6,7 +6,7 @@ export default {
 	links: [
 		{
 			rel: 'stylesheet',
-			href: '/src/style.css',
+			href: '/src/css/style.css',
 		},
 		{
 			rel: 'stylesheet',

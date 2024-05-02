@@ -1,4 +1,4 @@
 import { html } from 'cuirk'
 
-export const link = ({ title, link, target = '_self' }) =>
-	html`<a href="${link}" target="${target}">${title}</a>`
+export const link = ({ title, href, target = '_self' }) =>
+	html`<a href="${href}" target="${target}">${title}</a>`

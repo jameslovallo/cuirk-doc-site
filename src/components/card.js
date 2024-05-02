@@ -1,40 +1,56 @@
 import { html, scss, when } from 'cuirk'
 
-export const card = ({ img, title, description, link, linkLabel }) => html`
-	<a href="${link}" class="card">
-		${when(img, html`<img src="${img}" />`)}
-		${when(title, html`<h3>${title}</h3>`)}
-		${when(description, html`<small>${description}</small>`)}
-		${when(link && linkLabel, html`<small>${linkLabel}</small>`)}
+export const card = ({ title, description, href, linkLabel }) => html`
+	<a href="${href}" class="card">
+		<div class="text">
+			${when(title, html`<h3>${title}</h3>`)}
+			${when(description, html`<small>${description}</small>`)}
+		</div>
+		<div class="link">
+			${when(href && linkLabel, html`<small>${linkLabel}</small>`)}
+		</div>
 	</a>
 `
 
 card.style = scss`
-		.card {
+	.card {
 		background: var(--c-surface);
 		border: var(--c-border);
 		border-radius: 1rem;
 		color: var(--c-surface-color);
 		display: grid;
-		gap: .5rem;
-		padding: 1rem;
+		overflow: hidden;
 		text-decoration: none;
 
 		&:hover {
-			background: var(--c-primary-hover);
 			border-color: var(--c-primary-active);
+
+			> .link {
+				background: linear-gradient(to bottom, transparent 0%, var(--c-primary-hover) 100%);
+				border-color: var(--c-primary-hover);
+			}
 		}
 		&:active {
-			background: var(--c-primary-active);
+			> .link {
+				background: linear-gradient(to bottom, transparent 0%, var(--c-primary-active) 100%);
+				border-color: var(--c-primary-active);
+			}
 		}
 
 		* {
 			margin: 0;
 		}
 
-		small:last-of-type {
-			display: inline-block;
-			margin-top: .5rem;
+		> .text {
+			display: grid;
+			gap: .5rem;
+			padding: 1rem;
+		}
+
+		> .link {
+			border-top: var(--c-border);
+			color: dodgerblue;
+			padding: 1rem;
 		}
 	}
 `

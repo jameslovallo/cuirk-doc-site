@@ -1,7 +1,7 @@
 import { html, loop, scss } from 'cuirk'
 import { link } from './link.js'
 
-export const nav = ({ links }) => {
+export const nav = (links) => {
 	const left = links.filter(({ position }) => position === 'start')
 	const center = links.filter(({ position }) => position === 'center')
 	const right = links.filter(({ position }) => position === 'end')
@@ -40,7 +40,11 @@ nav.style = scss`
 				text-decoration: none;
 
 				&:hover {
-					background: #111;
+					background: var(--c-primary-hover);
+				}
+
+				&:active {
+					background: var(--c-primary-active);
 				}
 			}
 		}
