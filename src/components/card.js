@@ -2,13 +2,13 @@ import { html, scss, when } from 'cuirk'
 
 export const card = ({ title, description, href, linkLabel }) => html`
 	<a href="${href}" class="card">
-		<div class="text">
+		<span class="text">
 			${when(title, html`<h3>${title}</h3>`)}
 			${when(description, html`<small>${description}</small>`)}
-		</div>
-		<div class="link">
+		</span>
+		<span class="link">
 			${when(href && linkLabel, html`<small>${linkLabel}</small>`)}
-		</div>
+		</span>
 	</a>
 `
 
