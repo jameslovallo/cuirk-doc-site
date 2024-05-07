@@ -1,7 +1,7 @@
 import { html, loop, scss } from 'cuirk'
-import { link } from './link.js'
+import { textLink } from './index.js'
 
-export const footer = (links) => html` <footer>${loop(links, link)}</footer> `
+export const footer = (links) => html`<footer>${loop(links, textLink)}</footer>`
 
 footer.style = scss`
 	footer {
