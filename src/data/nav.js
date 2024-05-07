@@ -10,6 +10,7 @@ export default [
 		href: '/quick-start',
 		linkLabel: 'Template Gallery',
 		position: 'end',
+		classList: ['show-on-mobile'],
 	},
 	{
 		title: 'Layouts',
