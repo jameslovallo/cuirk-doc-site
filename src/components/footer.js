@@ -8,6 +8,7 @@ footer.style = scss`
 		background: var(--footer-bg, black);
 		color: var(--footer-color, white);
 		display: flex;
+		flex-flow: row wrap;
 		gap: 1rem;
 		justify-content: center;
 		padding: 2rem 1rem;

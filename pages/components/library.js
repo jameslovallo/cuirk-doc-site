@@ -10,5 +10,5 @@ export const meta = {
 export const body = md`
 # ${meta.title}
 
-${grid({ children: loop(components, iconTile), size: '20ch' })}
+${grid({ children: loop(components, iconTile), size: '18ch' })}
 `
